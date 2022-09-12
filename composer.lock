@@ -4,8 +4,1364 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48809d75bae86e25d9718afade8e07e9",
+    "content-hash": "d42fc0d197d5fbfba1004d7df67e9db4",
     "packages": [
+        {
+            "name": "apie/apie-bundle",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/apie-bundle.git",
+                "reference": "1bc55ca904d42bdc7d7af24ac02c2b79511eb5e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/apie-bundle/zipball/1bc55ca904d42bdc7d7af24ac02c2b79511eb5e6",
+                "reference": "1bc55ca904d42bdc7d7af24ac02c2b79511eb5e6",
+                "shasum": ""
+            },
+            "require": {
+                "apie/common": "self.version",
+                "apie/core": "self.version",
+                "php": ">=8.1",
+                "symfony/config": "6.*",
+                "symfony/dependency-injection": "6.*",
+                "symfony/finder": "6.*",
+                "symfony/http-kernel": "6.*",
+                "symfony/psr-http-message-bridge": "2.*",
+                "symfony/routing": "6.*"
+            },
+            "require-dev": {
+                "apie/cms": "self.version",
+                "apie/cms-layout-graphite": "self.version",
+                "apie/console": "self.version",
+                "apie/country-and-phone-number": "self.version",
+                "apie/faker": "self.version",
+                "apie/fixtures": "self.version",
+                "apie/rest-api": "self.version",
+                "apie/text-value-objects": "self.version",
+                "league/openapi-psr7-validator": "0.18",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5",
+                "symfony/framework-bundle": "6.*",
+                "symfony/twig-bundle": "6.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\ApieBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: apie bundle",
+            "support": {
+                "issues": "https://github.com/apie-lib/apie-bundle/issues",
+                "source": "https://github.com/apie-lib/apie-bundle/tree/1.0.0"
+            },
+            "time": "2022-09-10T18:04:11+00:00"
+        },
+        {
+            "name": "apie/cms",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/cms.git",
+                "reference": "d24f62cfc2a059325ee15021121c6cd25d047b5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/cms/zipball/d24f62cfc2a059325ee15021121c6cd25d047b5e",
+                "reference": "d24f62cfc2a059325ee15021121c6cd25d047b5e",
+                "shasum": ""
+            },
+            "require": {
+                "apie/common": "self.version",
+                "apie/core": "self.version",
+                "apie/html-builders": "self.version",
+                "nyholm/psr7": "^1.5",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\Cms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: cms",
+            "support": {
+                "issues": "https://github.com/apie-lib/cms/issues",
+                "source": "https://github.com/apie-lib/cms/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:18+00:00"
+        },
+        {
+            "name": "apie/cms-layout-graphite",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/cms-layout-graphite.git",
+                "reference": "43a0ec2d9b06e49a1a440b5403189b0e5b10893b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/cms-layout-graphite/zipball/43a0ec2d9b06e49a1a440b5403189b0e5b10893b",
+                "reference": "43a0ec2d9b06e49a1a440b5403189b0e5b10893b",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "apie/html-builders": "self.version",
+                "php": ">=8.1",
+                "twig/twig": "^3.4.2"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\CmsLayoutGraphite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: cms layout graphite",
+            "support": {
+                "issues": "https://github.com/apie-lib/cms-layout-graphite/issues",
+                "source": "https://github.com/apie-lib/cms-layout-graphite/tree/1.0.0"
+            },
+            "time": "2022-09-10T17:10:16+00:00"
+        },
+        {
+            "name": "apie/common",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/common.git",
+                "reference": "fc50d7595b5d6a0f1a42eacc8695e6881e831e05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/common/zipball/fc50d7595b5d6a0f1a42eacc8695e6881e831e05",
+                "reference": "fc50d7595b5d6a0f1a42eacc8695e6881e831e05",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "apie/serializer": "self.version",
+                "php": ">=8.1",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "apie/composite-value-objects": "self.version",
+                "apie/fixtures": "self.version",
+                "apie/text-value-objects": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: common",
+            "support": {
+                "issues": "https://github.com/apie-lib/common/issues",
+                "source": "https://github.com/apie-lib/common/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:17+00:00"
+        },
+        {
+            "name": "apie/common-value-objects",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/common-value-objects.git",
+                "reference": "ef8b5a6d7e39526aaf5da2f7258e3e4164ec42c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/common-value-objects/zipball/ef8b5a6d7e39526aaf5da2f7258e3e4164ec42c1",
+                "reference": "ef8b5a6d7e39526aaf5da2f7258e3e4164ec42c1",
+                "shasum": ""
+            },
+            "require": {
+                "apie/composite-value-objects": "self.version",
+                "apie/core": "self.version",
+                "apie/country-and-phone-number": "self.version",
+                "apie/date-value-objects": "self.version",
+                "apie/regex-value-objects": "self.version",
+                "apie/text-value-objects": "self.version",
+                "cebe/php-openapi": "^1.7",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\CommonValueObjects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: common value objects",
+            "support": {
+                "issues": "https://github.com/apie-lib/common-value-objects/issues",
+                "source": "https://github.com/apie-lib/common-value-objects/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:03+00:00"
+        },
+        {
+            "name": "apie/composite-value-objects",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/composite-value-objects.git",
+                "reference": "450ee1be7e6c73d99daca908b2f2282735f6302e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/composite-value-objects/zipball/450ee1be7e6c73d99daca908b2f2282735f6302e",
+                "reference": "450ee1be7e6c73d99daca908b2f2282735f6302e",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\CompositeValueObjects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: composite value objects",
+            "support": {
+                "issues": "https://github.com/apie-lib/composite-value-objects/issues",
+                "source": "https://github.com/apie-lib/composite-value-objects/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:14+00:00"
+        },
+        {
+            "name": "apie/core",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/core.git",
+                "reference": "d66b98578397dbb9f414c74c3f8db3d5cdf95fc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/core/zipball/d66b98578397dbb9f414c74c3f8db3d5cdf95fc0",
+                "reference": "d66b98578397dbb9f414c74c3f8db3d5cdf95fc0",
+                "shasum": ""
+            },
+            "require": {
+                "fakerphp/faker": "^1.19",
+                "php": ">=8.1",
+                "psr/http-message": "^1.0",
+                "ramsey/uuid": "^4.3.1"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "cebe/php-openapi": "^1.7",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Core functionality of the Apie library.",
+            "support": {
+                "issues": "https://github.com/apie-lib/core/issues",
+                "source": "https://github.com/apie-lib/core/tree/1.0.0"
+            },
+            "time": "2022-09-08T10:10:04+00:00"
+        },
+        {
+            "name": "apie/country-and-phone-number",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/country-and-phone-number.git",
+                "reference": "55854ff11fa9086e82125360508e6f6a4510863b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/country-and-phone-number/zipball/55854ff11fa9086e82125360508e6f6a4510863b",
+                "reference": "55854ff11fa9086e82125360508e6f6a4510863b",
+                "shasum": ""
+            },
+            "require": {
+                "apie/composite-value-objects": "self.version",
+                "apie/core": "self.version",
+                "giggsey/libphonenumber-for-php": "^8.0",
+                "php": ">=8.1",
+                "prinsfrank/standards": "^1.0.0"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "cebe/php-openapi": "^1.7",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\CountryAndPhoneNumber\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: country and phonenumber",
+            "support": {
+                "issues": "https://github.com/apie-lib/country-and-phone-number/issues",
+                "source": "https://github.com/apie-lib/country-and-phone-number/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:08+00:00"
+        },
+        {
+            "name": "apie/date-value-objects",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/date-value-objects.git",
+                "reference": "f388ee29950454c100d9f68ef9bfef0212e78484"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/date-value-objects/zipball/f388ee29950454c100d9f68ef9bfef0212e78484",
+                "reference": "f388ee29950454c100d9f68ef9bfef0212e78484",
+                "shasum": ""
+            },
+            "require": {
+                "apie/composite-value-objects": "self.version",
+                "apie/core": "self.version",
+                "cebe/php-openapi": "^1.7",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\DateValueObjects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: date value objects",
+            "support": {
+                "issues": "https://github.com/apie-lib/date-value-objects/issues",
+                "source": "https://github.com/apie-lib/date-value-objects/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:09+00:00"
+        },
+        {
+            "name": "apie/dateformat-to-regex",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/dateformat-to-regex.git",
+                "reference": "dab75aca26d87e2c549d5ace4963c7c9089cba05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/dateformat-to-regex/zipball/dab75aca26d87e2c549d5ace4963c7c9089cba05",
+                "reference": "dab75aca26d87e2c549d5ace4963c7c9089cba05",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\DateformatToRegex\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: dateformat to regex",
+            "support": {
+                "issues": "https://github.com/apie-lib/dateformat-to-regex/issues",
+                "source": "https://github.com/apie-lib/dateformat-to-regex/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:07+00:00"
+        },
+        {
+            "name": "apie/html-builders",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/html-builders.git",
+                "reference": "1209f8088ebaa5eec99c7b7ef8fb8a2843cea134"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/html-builders/zipball/1209f8088ebaa5eec99c7b7ef8fb8a2843cea134",
+                "reference": "1209f8088ebaa5eec99c7b7ef8fb8a2843cea134",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "php": ">=8.1",
+                "symfony/mime": "6.*"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\HtmlBuilders\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: html builders",
+            "support": {
+                "issues": "https://github.com/apie-lib/html-builders/issues",
+                "source": "https://github.com/apie-lib/html-builders/tree/1.0.0"
+            },
+            "time": "2022-09-10T17:10:28+00:00"
+        },
+        {
+            "name": "apie/regex-value-objects",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/regex-value-objects.git",
+                "reference": "e9cad3c13b07cf5672777c6985c1e4b78c299f92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/regex-value-objects/zipball/e9cad3c13b07cf5672777c6985c1e4b78c299f92",
+                "reference": "e9cad3c13b07cf5672777c6985c1e4b78c299f92",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\RegexValueObjects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: regex value objects",
+            "support": {
+                "issues": "https://github.com/apie-lib/regex-value-objects/issues",
+                "source": "https://github.com/apie-lib/regex-value-objects/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:19+00:00"
+        },
+        {
+            "name": "apie/rest-api",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/rest-api.git",
+                "reference": "f2bf810ab888237663214b249ca05c2f50fd7f6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/rest-api/zipball/f2bf810ab888237663214b249ca05c2f50fd7f6b",
+                "reference": "f2bf810ab888237663214b249ca05c2f50fd7f6b",
+                "shasum": ""
+            },
+            "require": {
+                "apie/common": "self.version",
+                "apie/core": "self.version",
+                "apie/schema-generator": "self.version",
+                "apie/serializer": "self.version",
+                "cebe/php-openapi": "^1.7",
+                "nyholm/psr7": "^1.5",
+                "php": ">=8.1",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "apie/composite-value-objects": "self.version",
+                "apie/fixtures": "self.version",
+                "apie/text-value-objects": "self.version",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\RestApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: rest api",
+            "support": {
+                "issues": "https://github.com/apie-lib/rest-api/issues",
+                "source": "https://github.com/apie-lib/rest-api/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:47+00:00"
+        },
+        {
+            "name": "apie/schema-generator",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/schema-generator.git",
+                "reference": "c3ba85738eb3df1a987662e760bec0f83fc56d47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/schema-generator/zipball/c3ba85738eb3df1a987662e760bec0f83fc56d47",
+                "reference": "c3ba85738eb3df1a987662e760bec0f83fc56d47",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "apie/dateformat-to-regex": "self.version",
+                "cebe/php-openapi": "^1.7",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "apie/common-value-objects": "self.version",
+                "apie/date-value-objects": "self.version",
+                "apie/fixtures": "self.version",
+                "apie/text-value-objects": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\SchemaGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: schema generator",
+            "support": {
+                "issues": "https://github.com/apie-lib/schema-generator/issues",
+                "source": "https://github.com/apie-lib/schema-generator/tree/1.0.0"
+            },
+            "time": "2022-09-08T09:37:10+00:00"
+        },
+        {
+            "name": "apie/serializer",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/serializer.git",
+                "reference": "59bd6c7927bf999e6f00bd99c312c753702158d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/serializer/zipball/59bd6c7927bf999e6f00bd99c312c753702158d6",
+                "reference": "59bd6c7927bf999e6f00bd99c312c753702158d6",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "php": ">=8.1",
+                "psr/http-message": "^1.0",
+                "symfony/http-foundation": "^6.1"
+            },
+            "require-dev": {
+                "apie/common-value-objects": "self.version",
+                "apie/fixtures": "self.version",
+                "apie/text-value-objects": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\Serializer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: serializer",
+            "support": {
+                "issues": "https://github.com/apie-lib/serializer/issues",
+                "source": "https://github.com/apie-lib/serializer/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:21+00:00"
+        },
+        {
+            "name": "apie/text-value-objects",
+            "version": "1.0.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apie-lib/text-value-objects.git",
+                "reference": "fcdcd29966bcb9be381eb17d84a4b3789070c92b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apie-lib/text-value-objects/zipball/fcdcd29966bcb9be381eb17d84a4b3789070c92b",
+                "reference": "fcdcd29966bcb9be381eb17d84a4b3789070c92b",
+                "shasum": ""
+            },
+            "require": {
+                "apie/core": "self.version",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "apie/fixtures": "self.version",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apie\\TextValueObjects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pieter Jordaan",
+                    "email": "pieter_jordaan@hotmail.com"
+                }
+            ],
+            "description": "Composer package of the apie library: text value objects",
+            "support": {
+                "issues": "https://github.com/apie-lib/text-value-objects/issues",
+                "source": "https://github.com/apie-lib/text-value-objects/tree/1.0.0"
+            },
+            "time": "2022-09-07T19:02:54+00:00"
+        },
+        {
+            "name": "brick/math",
+            "version": "0.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/math.git",
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^9.0",
+                "vimeo/psalm": "4.25.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Math\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Arbitrary-precision arithmetic library",
+            "keywords": [
+                "Arbitrary-precision",
+                "BigInteger",
+                "BigRational",
+                "arithmetic",
+                "bigdecimal",
+                "bignum",
+                "brick",
+                "math"
+            ],
+            "support": {
+                "issues": "https://github.com/brick/math/issues",
+                "source": "https://github.com/brick/math/tree/0.10.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/BenMorel",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-10T22:54:19+00:00"
+        },
+        {
+            "name": "cebe/php-openapi",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cebe/php-openapi.git",
+                "reference": "020d72b8e3a9a60bc229953e93eda25c49f46f45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cebe/php-openapi/zipball/020d72b8e3a9a60bc229953e93eda25c49f46f45",
+                "reference": "020d72b8e3a9a60bc229953e93eda25c49f46f45",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "justinrainbow/json-schema": "^5.2",
+                "php": ">=7.1.0",
+                "symfony/yaml": "^3.4 || ^4 || ^5 || ^6"
+            },
+            "conflict": {
+                "symfony/yaml": "3.4.0 - 3.4.4 || 4.0.0 - 4.4.17 || 5.0.0 - 5.1.9 || 5.2.0"
+            },
+            "require-dev": {
+                "apis-guru/openapi-directory": "1.0.0",
+                "cebe/indent": "*",
+                "mermade/openapi3-examples": "1.0.0",
+                "nexmo/api-specification": "1.0.0",
+                "oai/openapi-specification": "3.0.3",
+                "phpstan/phpstan": "^0.12.0",
+                "phpunit/phpunit": "^6.5 || ^7.5 || ^8.5 || ^9.4"
+            },
+            "bin": [
+                "bin/php-openapi"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "cebe\\openapi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "https://cebe.cc/",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Read and write OpenAPI yaml/json files and make the content accessable in PHP objects.",
+            "homepage": "https://github.com/cebe/php-openapi#readme",
+            "keywords": [
+                "openapi"
+            ],
+            "support": {
+                "issues": "https://github.com/cebe/php-openapi/issues",
+                "source": "https://github.com/cebe/php-openapi"
+            },
+            "time": "2022-04-20T14:46:44+00:00"
+        },
+        {
+            "name": "fakerphp/faker",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FakerPHP/Faker.git",
+                "reference": "37f751c67a5372d4e26353bd9384bc03744ec77b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/37f751c67a5372d4e26353bd9384bc03744ec77b",
+                "reference": "37f751c67a5372d4e26353bd9384bc03744ec77b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "psr/container": "^1.0 || ^2.0",
+                "symfony/deprecation-contracts": "^2.2 || ^3.0"
+            },
+            "conflict": {
+                "fzaninotto/faker": "*"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "doctrine/persistence": "^1.3 || ^2.0",
+                "ext-intl": "*",
+                "symfony/phpunit-bridge": "^4.4 || ^5.2"
+            },
+            "suggest": {
+                "doctrine/orm": "Required to use Faker\\ORM\\Doctrine",
+                "ext-curl": "Required by Faker\\Provider\\Image to download images.",
+                "ext-dom": "Required by Faker\\Provider\\HtmlLorem for generating random HTML.",
+                "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
+                "ext-mbstring": "Required for multibyte Unicode string functionality."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "v1.20-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "support": {
+                "issues": "https://github.com/FakerPHP/Faker/issues",
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.20.0"
+            },
+            "time": "2022-07-20T13:12:54+00:00"
+        },
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "8.12.55",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "a4f21baace2038d4d47206aec15209365b629e86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/a4f21baace2038d4d47206aec15209365b629e86",
+                "reference": "a4f21baace2038d4d47206aec15209365b629e86",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/locale": "^1.7|^2.0",
+                "php": ">=5.3.2",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^1.0|^2.0",
+                "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "libphonenumber\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/src/data/",
+                    "/src/carrier/data/",
+                    "/src/geocoding/data/",
+                    "/src/timezone/data/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "support": {
+                "irc": "irc://irc.appliedirc.com/lobby",
+                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
+                "source": "https://github.com/giggsey/libphonenumber-for-php"
+            },
+            "time": "2022-09-09T12:56:05+00:00"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/Locale.git",
+                "reference": "9c1dca769253f6a3e81f9a5c167f53b6a54ab635"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/9c1dca769253f6a3e81f9a5c167f53b6a54ab635",
+                "reference": "9c1dca769253f6a3e81f9a5c167f53b6a54ab635",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^8.5|^9.5",
+                "symfony/console": "^5.0",
+                "symfony/filesystem": "^5.0",
+                "symfony/finder": "^5.0",
+                "symfony/process": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "support": {
+                "issues": "https://github.com/giggsey/Locale/issues",
+                "source": "https://github.com/giggsey/Locale/tree/2.2"
+            },
+            "time": "2022-04-06T07:33:59+00:00"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "5.2.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
+                "json-schema/json-schema-test-suite": "1.2.0",
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonSchema\\": "src/JsonSchema/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "support": {
+                "issues": "https://github.com/justinrainbow/json-schema/issues",
+                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.12"
+            },
+            "time": "2022-04-13T08:02:27+00:00"
+        },
+        {
+            "name": "nyholm/psr7",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7.git",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/f734364e38a876a23be4d906a2a089e1315be18a",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-http/message-factory": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "http-interop/http-factory-tests": "^0.9",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
+                "symfony/error-handler": "^4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "A fast PHP7 implementation of PSR-7",
+            "homepage": "https://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7/issues",
+                "source": "https://github.com/Nyholm/psr7/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-06-22T07:13:36+00:00"
+        },
+        {
+            "name": "php-http/message-factory",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/message-factory.git",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/message-factory/zipball/a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Factory interfaces for PSR-7 HTTP Message",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/message-factory/issues",
+                "source": "https://github.com/php-http/message-factory/tree/master"
+            },
+            "time": "2015-12-19T14:08:53+00:00"
+        },
+        {
+            "name": "prinsfrank/standards",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PrinsFrank/standards.git",
+                "reference": "9b352fcfd0ac51e5484858a59603c89c13446cce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PrinsFrank/standards/zipball/9b352fcfd0ac51e5484858a59603c89c13446cce",
+                "reference": "9b352fcfd0ac51e5484858a59603c89c13446cce",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "composer/composer": "^2.3",
+                "dbrekelmans/bdi": "^1.0",
+                "ext-dom": "*",
+                "ext-intl": "*",
+                "ext-mbstring": "*",
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^9.5",
+                "symfony/panther": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PrinsFrank\\Standards\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A collection of standards as PHP Enums: ISO3166, ISO4217, ISO639...",
+            "support": {
+                "issues": "https://github.com/PrinsFrank/standards/issues",
+                "source": "https://github.com/PrinsFrank/standards/tree/v1.3.0"
+            },
+            "time": "2022-08-24T20:01:35+00:00"
+        },
         {
             "name": "psr/cache",
             "version": "3.0.0",
@@ -159,6 +1515,114 @@
             "time": "2019-01-08T18:20:26+00:00"
         },
         {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/master"
+            },
+            "time": "2019-04-30T12:38:16+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
             "name": "psr/log",
             "version": "3.0.0",
             "source": {
@@ -207,6 +1671,178 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "ramsey/collection",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/collection.git",
+                "reference": "cccc74ee5e328031b15640b51056ee8d3bb66c0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/cccc74ee5e328031b15640b51056ee8d3bb66c0a",
+                "reference": "cccc74ee5e328031b15640b51056ee8d3bb66c0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8",
+                "symfony/polyfill-php81": "^1.23"
+            },
+            "require-dev": {
+                "captainhook/captainhook": "^5.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "ergebnis/composer-normalize": "^2.6",
+                "fakerphp/faker": "^1.5",
+                "hamcrest/hamcrest-php": "^2",
+                "jangregor/phpstan-prophecy": "^0.8",
+                "mockery/mockery": "^1.3",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/extension-installer": "^1",
+                "phpstan/phpstan": "^0.12.32",
+                "phpstan/phpstan-mockery": "^0.12.5",
+                "phpstan/phpstan-phpunit": "^0.12.11",
+                "phpunit/phpunit": "^8.5 || ^9",
+                "psy/psysh": "^0.10.4",
+                "slevomat/coding-standard": "^6.3",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ramsey\\Collection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                }
+            ],
+            "description": "A PHP library for representing and manipulating collections.",
+            "keywords": [
+                "array",
+                "collection",
+                "hash",
+                "map",
+                "queue",
+                "set"
+            ],
+            "support": {
+                "issues": "https://github.com/ramsey/collection/issues",
+                "source": "https://github.com/ramsey/collection/tree/1.2.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/ramsey/collection",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-10-10T03:01:02+00:00"
+        },
+        {
+            "name": "ramsey/uuid",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "373f7bacfcf3de038778ff27dcce5672ddbf4c8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/373f7bacfcf3de038778ff27dcce5672ddbf4c8a",
+                "reference": "373f7bacfcf3de038778ff27dcce5672ddbf4c8a",
+                "shasum": ""
+            },
+            "require": {
+                "brick/math": "^0.8 || ^0.9 || ^0.10",
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "php": "^8.0",
+                "ramsey/collection": "^1.0"
+            },
+            "replace": {
+                "rhumsaa/uuid": "self.version"
+            },
+            "require-dev": {
+                "captainhook/captainhook": "^5.10",
+                "captainhook/plugin-composer": "^5.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "doctrine/annotations": "^1.8",
+                "ergebnis/composer-normalize": "^2.15",
+                "mockery/mockery": "^1.3",
+                "paragonie/random-lib": "^2",
+                "php-mock/php-mock": "^2.2",
+                "php-mock/php-mock-mockery": "^1.3",
+                "php-parallel-lint/php-parallel-lint": "^1.1",
+                "phpbench/phpbench": "^1.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-mockery": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^8.5 || ^9",
+                "slevomat/coding-standard": "^7.0",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.9"
+            },
+            "suggest": {
+                "ext-bcmath": "Enables faster math with arbitrary-precision integers using BCMath.",
+                "ext-ctype": "Enables faster processing of character classification using ctype functions.",
+                "ext-gmp": "Enables faster math with arbitrary-precision integers using GMP.",
+                "ext-uuid": "Enables the use of PeclUuidTimeGenerator and PeclUuidRandomGenerator.",
+                "paragonie/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
+                "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
+            },
+            "type": "library",
+            "extra": {
+                "captainhook": {
+                    "force-install": true
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Ramsey\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP library for generating and working with universally unique identifiers (UUIDs).",
+            "keywords": [
+                "guid",
+                "identifier",
+                "uuid"
+            ],
+            "support": {
+                "issues": "https://github.com/ramsey/uuid/issues",
+                "source": "https://github.com/ramsey/uuid/tree/4.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/ramsey/uuid",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-05T17:58:37+00:00"
         },
         {
             "name": "symfony/cache",
@@ -1545,6 +3181,87 @@
             "time": "2022-08-26T14:50:30+00:00"
         },
         {
+            "name": "symfony/mime",
+            "version": "v6.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mime.git",
+                "reference": "5d1de2d3c52f8ca469c488f4b9e007e9e9cee0b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/5d1de2d3c52f8ca469c488f4b9e007e9e9cee0b3",
+                "reference": "5d1de2d3c52f8ca469c488f4b9e007e9e9cee0b3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "conflict": {
+                "egulias/email-validator": "~3.0.0",
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/mailer": "<5.4"
+            },
+            "require-dev": {
+                "egulias/email-validator": "^2.1.10|^3.1",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/property-access": "^5.4|^6.0",
+                "symfony/property-info": "^5.4|^6.0",
+                "symfony/serializer": "^5.4|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mime\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Allows manipulating MIME messages",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "mime",
+                "mime-type"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/mime/tree/v6.1.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-19T14:27:04+00:00"
+        },
+        {
             "name": "symfony/polyfill-intl-grapheme",
             "version": "v1.26.0",
             "source": {
@@ -1608,6 +3325,93 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
+        },
+        {
+            "name": "symfony/polyfill-intl-idn",
+            "version": "v1.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-idn.git",
+                "reference": "59a8d271f00dd0e4c2e518104cc7963f655a1aa8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/59a8d271f00dd0e4c2e518104cc7963f655a1aa8",
+                "reference": "59a8d271f00dd0e4c2e518104cc7963f655a1aa8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "symfony/polyfill-intl-normalizer": "^1.10",
+                "symfony/polyfill-php72": "^1.10"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laurent Bassin",
+                    "email": "laurent@bassin.info"
+                },
+                {
+                    "name": "Trevor Rowbotham",
+                    "email": "trevor.rowbotham@pm.me"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "idn",
+                "intl",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.26.0"
             },
             "funding": [
                 {
@@ -1791,6 +3595,94 @@
                 }
             ],
             "time": "2022-05-24T11:49:31+00:00"
+        },
+        {
+            "name": "symfony/psr-http-message-bridge",
+            "version": "v2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/psr-http-message-bridge.git",
+                "reference": "d444f85dddf65c7e57c58d8e5b3a4dbb593b1840"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/d444f85dddf65c7e57c58d8e5b3a4dbb593b1840",
+                "reference": "d444f85dddf65c7e57c58d8e5b3a4dbb593b1840",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "psr/http-message": "^1.0",
+                "symfony/http-foundation": "^4.4 || ^5.0 || ^6.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.1",
+                "psr/log": "^1.1 || ^2 || ^3",
+                "symfony/browser-kit": "^4.4 || ^5.0 || ^6.0",
+                "symfony/config": "^4.4 || ^5.0 || ^6.0",
+                "symfony/event-dispatcher": "^4.4 || ^5.0 || ^6.0",
+                "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0",
+                "symfony/http-kernel": "^4.4 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^5.4@dev || ^6.0"
+            },
+            "suggest": {
+                "nyholm/psr7": "For a super lightweight PSR-7/17 implementation"
+            },
+            "type": "symfony-bridge",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bridge\\PsrHttpMessage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "PSR HTTP message bridge",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony/psr-http-message-bridge/issues",
+                "source": "https://github.com/symfony/psr-http-message-bridge/tree/v2.1.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-09-05T10:34:54+00:00"
         },
         {
             "name": "symfony/routing",
@@ -2127,6 +4019,295 @@
             "time": "2022-08-12T18:05:43+00:00"
         },
         {
+            "name": "symfony/translation-contracts",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "606be0f48e05116baef052f7f3abdb345c8e02cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/606be0f48e05116baef052f7f3abdb345c8e02cc",
+                "reference": "606be0f48e05116baef052f7f3abdb345c8e02cc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "suggest": {
+                "symfony/translation-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Test/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to translation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/translation-contracts/tree/v3.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-27T17:24:16+00:00"
+        },
+        {
+            "name": "symfony/twig-bridge",
+            "version": "v6.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/twig-bridge.git",
+                "reference": "ec8da630a439a233817412fca93d14aa1813cc5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/ec8da630a439a233817412fca93d14aa1813cc5d",
+                "reference": "ec8da630a439a233817412fca93d14aa1813cc5d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/translation-contracts": "^1.1|^2|^3",
+                "twig/twig": "^2.13|^3.0.4"
+            },
+            "conflict": {
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/console": "<5.4",
+                "symfony/form": "<6.1",
+                "symfony/http-foundation": "<5.4",
+                "symfony/http-kernel": "<5.4",
+                "symfony/translation": "<5.4",
+                "symfony/workflow": "<5.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.12",
+                "egulias/email-validator": "^2.1.10|^3",
+                "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
+                "symfony/asset": "^5.4|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/expression-language": "^5.4|^6.0",
+                "symfony/finder": "^5.4|^6.0",
+                "symfony/form": "^6.1",
+                "symfony/html-sanitizer": "^6.1",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/intl": "^5.4|^6.0",
+                "symfony/mime": "^5.4|^6.0",
+                "symfony/polyfill-intl-icu": "~1.0",
+                "symfony/property-info": "^5.4|^6.0",
+                "symfony/routing": "^5.4|^6.0",
+                "symfony/security-acl": "^2.8|^3.0",
+                "symfony/security-core": "^5.4|^6.0",
+                "symfony/security-csrf": "^5.4|^6.0",
+                "symfony/security-http": "^5.4|^6.0",
+                "symfony/serializer": "^5.4|^6.0",
+                "symfony/stopwatch": "^5.4|^6.0",
+                "symfony/translation": "^5.4|^6.0",
+                "symfony/web-link": "^5.4|^6.0",
+                "symfony/workflow": "^5.4|^6.0",
+                "symfony/yaml": "^5.4|^6.0",
+                "twig/cssinliner-extra": "^2.12|^3",
+                "twig/inky-extra": "^2.12|^3",
+                "twig/markdown-extra": "^2.12|^3"
+            },
+            "suggest": {
+                "symfony/asset": "For using the AssetExtension",
+                "symfony/expression-language": "For using the ExpressionExtension",
+                "symfony/finder": "",
+                "symfony/form": "For using the FormExtension",
+                "symfony/html-sanitizer": "For using the HtmlSanitizerExtension",
+                "symfony/http-kernel": "For using the HttpKernelExtension",
+                "symfony/routing": "For using the RoutingExtension",
+                "symfony/security-core": "For using the SecurityExtension",
+                "symfony/security-csrf": "For using the CsrfExtension",
+                "symfony/security-http": "For using the LogoutUrlExtension",
+                "symfony/stopwatch": "For using the StopwatchExtension",
+                "symfony/translation": "For using the TranslationExtension",
+                "symfony/var-dumper": "For using the DumpExtension",
+                "symfony/web-link": "For using the WebLinkExtension",
+                "symfony/yaml": "For using the YamlExtension"
+            },
+            "type": "symfony-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bridge\\Twig\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides integration for Twig with various Symfony components",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/twig-bridge/tree/v6.1.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-04T19:19:00+00:00"
+        },
+        {
+            "name": "symfony/twig-bundle",
+            "version": "v6.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/twig-bundle.git",
+                "reference": "a2abab10068525a7f5a879e40e411d369d688545"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/twig-bundle/zipball/a2abab10068525a7f5a879e40e411d369d688545",
+                "reference": "a2abab10068525a7f5a879e40e411d369d688545",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": ">=2.1",
+                "php": ">=8.1",
+                "symfony/config": "^5.4|^6.0",
+                "symfony/dependency-injection": "^5.4|^6.0",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/twig-bridge": "^5.4|^6.0",
+                "twig/twig": "^2.13|^3.0.4"
+            },
+            "conflict": {
+                "symfony/framework-bundle": "<5.4",
+                "symfony/translation": "<5.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.10.4",
+                "symfony/asset": "^5.4|^6.0",
+                "symfony/expression-language": "^5.4|^6.0",
+                "symfony/finder": "^5.4|^6.0",
+                "symfony/form": "^5.4|^6.0",
+                "symfony/framework-bundle": "^5.4|^6.0",
+                "symfony/routing": "^5.4|^6.0",
+                "symfony/stopwatch": "^5.4|^6.0",
+                "symfony/translation": "^5.4|^6.0",
+                "symfony/web-link": "^5.4|^6.0",
+                "symfony/yaml": "^5.4|^6.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\TwigBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a tight integration of Twig into the Symfony full-stack framework",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/twig-bundle/tree/v6.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-27T16:55:36+00:00"
+        },
+        {
             "name": "symfony/var-dumper",
             "version": "v6.1.3",
             "source": {
@@ -2359,12 +4540,94 @@
                 }
             ],
             "time": "2022-08-02T16:17:38+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v3.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "e07cdd3d430cd7e453c31b36eb5ad6c0c5e43077"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e07cdd3d430cd7e453c31b36eb5ad6c0c5e43077",
+                "reference": "e07cdd3d430cd7e453c31b36eb5ad6c0c5e43077",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/v3.4.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-12T06:47:24+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "apie/apie-bundle": 20,
+        "apie/cms": 20,
+        "apie/cms-layout-graphite": 20,
+        "apie/common-value-objects": 20,
+        "apie/rest-api": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

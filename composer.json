@@ -1,20 +1,24 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "apie/apie-bundle": "1.0.0.x-dev",
+        "apie/cms": "1.0.0.x-dev",
+        "apie/cms-layout-graphite": "1.0.0.x-dev",
+        "apie/common-value-objects": "1.0.0.x-dev",
+        "apie/rest-api": "1.0.0.x-dev",
         "symfony/console": "6.1.*",
         "symfony/dotenv": "6.1.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.1.*",
         "symfony/runtime": "6.1.*",
+        "symfony/twig-bundle": "6.1.*",
         "symfony/yaml": "6.1.*"
-    },
-    "require-dev": {
     },
     "config": {
         "allow-plugins": {

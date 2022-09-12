@@ -1,0 +1,9 @@
+apie:
+  cms:
+    dashboard_template: 'apie/dashboard.html.twig'
+  bounded_contexts:
+    petstore:
+      entities_folder: "%kernel.project_dir%/src/Apie/PetStore/Resources/"
+      entities_namespace: 'App\Apie\PetStore\Resources'
+      actions_folder: "%kernel.project_dir%/src/Apie/PetStore/Actions/"
+      actions_namespace: 'App\Apie\PetStore\Actions'
