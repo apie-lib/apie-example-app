@@ -1,12 +1,12 @@
 <?php
-namespace Apie\PetStore\Identifiers;
+namespace App\Apie\PetStore\Identifiers;
 
-use Apie\Core\Identifiers\AutoIncrementInteger;
 use Apie\Core\Identifiers\IdentifierInterface;
+use Apie\CommonValueObjects\Email;
 use App\Apie\PetStore\Resources\User;
 use ReflectionClass;
 
-class UserIdentifier extends AutoIncrementInteger implements IdentifierInterface
+class UserIdentifier extends Email implements IdentifierInterface
 {
     public static function getReferenceFor(): ReflectionClass
     {

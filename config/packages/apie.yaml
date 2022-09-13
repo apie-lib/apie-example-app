@@ -7,3 +7,8 @@ apie:
       entities_namespace: 'App\Apie\PetStore\Resources'
       actions_folder: "%kernel.project_dir%/src/Apie/PetStore/Actions/"
       actions_namespace: 'App\Apie\PetStore\Actions'
+    typesdemo:
+      entities_folder: "%kernel.project_dir%/src/Apie/TypesDemo/Resources/"
+      entities_namespace: 'App\Apie\TypesDemo\Resources'
+      actions_folder: "%kernel.project_dir%/src/Apie/TypesDemo/Actions/"
+      actions_namespace: 'App\Apie\TypesDemo\Actions'

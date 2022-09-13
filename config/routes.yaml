@@ -2,6 +2,3 @@ controllers:
     resource: ../src/Controller/
     type: attribute
 
-apie:
-    resource: .
-    type: apie
