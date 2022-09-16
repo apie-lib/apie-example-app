@@ -1,15 +1,1 @@
-<p>This is the Apie example app. The only application code can be found in src and contains just entities.
-The rest is just done with apie/rest-api and apie/cms.</p>
-
-<p>
-You are now viewing the CMS dashboard, but you can also see the <a href="{{ url('apie.petstore.swagger_ui') }}">Rest API generated Swagger UI page.</a>
-Also included in the example app is apie/console to run the exact same functions as you can do in the CMS and the Rest API
-app.
-</p>
-
-<p>
-We have several examples on this example app to show what can be done.
-<ul>
-  <li>Petstore example</li>
-</ul>
-</p>
+{{ render(controller('App\\Controller\\DisplayDashboardController')) }}
