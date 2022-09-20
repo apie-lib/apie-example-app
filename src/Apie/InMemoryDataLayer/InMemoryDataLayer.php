@@ -1,5 +1,5 @@
 <?php
-namespace App\Apie;
+namespace App\Apie\InMemoryDataLayer;
 
 use Apie\ApieBundle\Wrappers\BoundedContextSelected;
 use Apie\Core\BoundedContext\BoundedContextId;
@@ -17,18 +17,13 @@ use Apie\Core\Identifiers\AutoIncrementInteger;
 use Apie\Core\Identifiers\IdentifierInterface;
 use ReflectionClass;
 use ReflectionProperty;
-use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use Symfony\Component\HttpFoundation\Session\Storage\SessionStorageInterface;
 
-class SessionDataLayer implements ApieDatalayer
+class InMemoryDataLayer implements ApieDatalayer
 {
-    public function __construct(private RequestStack $requestStack, private BoundedContextSelected $boundedContextSelected) {
-    }
-
-    private function getSession(): SessionInterface
-    {
-        return $this->requestStack->getMainRequest()->getSession();
+    public function __construct(
+        private MemoryContainerInterface $memory,
+        private BoundedContextSelected $boundedContextSelected
+    ) {
     }
 
     private function getSessionKey(ReflectionClass $class): LazyLoadedListIdentifier
@@ -47,7 +42,7 @@ class SessionDataLayer implements ApieDatalayer
     {
         $key = $this->getSessionKey($class);
         $callable = function () use ($key) {
-            return $this->getSession()->get('apie.' . $key->toNative(), []);
+            return $this->memory->getAll('apie.' . $key->toNative());
         };
         return new LazyLoadedList(
             $key,
@@ -60,7 +55,7 @@ class SessionDataLayer implements ApieDatalayer
     public function find(IdentifierInterface $identifier): EntityInterface
     {
         $key = $this->getSessionKey($identifier::getReferenceFor());
-        $list = $this->getSession()->get('apie.' . $key->toNative(), []);
+        $list = $this->memory->getAll('apie.' . $key->toNative());
         $idToFind = $identifier->toNative();
         foreach ($list as $item) {
             if ($item->getId()->toNative() === $idToFind) {
@@ -80,7 +75,7 @@ class SessionDataLayer implements ApieDatalayer
         $reflProperty->setAccessible(true);
         $reflProperty->setValue($entity, $id);
         $key = $this->getSessionKey($entity->getId()::getReferenceFor());
-        $list = $this->getSession()->get('apie.' . $key->toNative(), []);
+        $list = $this->memory->getAll('apie.' . $key->toNative());
 
         $id = $entity->getId()->toNative();        
         foreach ($list as $entityInList) {
@@ -89,20 +84,20 @@ class SessionDataLayer implements ApieDatalayer
             }
         }
         $list[] = $entity;
-        $this->getSession()->set('apie.' . $key->toNative(), $list);
+        $this->memory->setAll('apie.' . $key->toNative(), $list);
         return $entity;
     }
 
     public function persistExisting(EntityInterface $entity): EntityInterface
     {
         $key = $this->getSessionKey($entity->getId()::getReferenceFor());
-        $list = $this->getSession()->get('apie.' . $key->toNative(), []);
+        $list = $this->memory->getAll('apie.' . $key->toNative());
 
         $id = $entity->getId()->toNative();        
         foreach ($list as $key => $entityInList) {
             if ($entityInList->getId()->toNative() === $id) {
                 $list[$key] = $entity;
-                $this->getSession()->set('apie.' . $key->toNative(), $list);
+                $this->memory->setAll('apie.' . $key->toNative(), $list);
                 return $entity;
             }
         }

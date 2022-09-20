@@ -26,6 +26,9 @@ services:
             - controller.service_arguments
 
     Apie\Core\Datalayers\ApieDatalayer:
-        alias: App\Apie\SessionDataLayer
+        alias: App\Apie\InMemoryDataLayer\InMemoryDataLayer
+
+    App\Apie\InMemoryDataLayer\MemoryContainerInterface:
+        alias: App\Apie\InMemoryDataLayer\FromSymfonySession
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
