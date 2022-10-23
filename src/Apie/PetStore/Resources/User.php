@@ -31,22 +31,22 @@ class User implements EntityInterface
         return $this->id;
     }
 
-    public function getFirstName(): string
+    public function getFirstName(): FirstName
     {
         return $this->firstName;
     }
 
-    public function getLastName(): string
+    public function getLastName(): LastName
     {
         return $this->lastName;
     }
 
-    public function getPhone(): string
+    public function getPhone(): InternationalPhoneNumber
     {
         return $this->phone;
     }
 
-    public function getUserStatus(): string
+    public function getUserStatus(): UserStatus
     {
         return $this->userStatus;
     }

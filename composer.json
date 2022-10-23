@@ -12,6 +12,7 @@
         "apie/cms-layout-graphite": "1.0.0.x-dev",
         "apie/common-value-objects": "1.0.0.x-dev",
         "apie/country-and-phone-number": "1.0.0.x-dev",
+        "apie/faker": "1.0.0.x-dev",
         "apie/rest-api": "1.0.0.x-dev",
         "apie/text-value-objects": "1.0.0.x-dev",
         "symfony/console": "6.1.*",

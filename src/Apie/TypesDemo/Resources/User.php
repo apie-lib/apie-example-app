@@ -20,6 +20,11 @@ class User implements EntityInterface
         $this->encryptedPassword = EncryptedPassword::fromUnencryptedPassword($password);
     }
 
+    public function getPhoneNumber(): DutchPhoneNumber|BritishPhoneNumber
+    {
+        return $this->phoneNumber;
+    }
+
     #[Internal()]
     public function verifyAuthentication(string $password)
     {

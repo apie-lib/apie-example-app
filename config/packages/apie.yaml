@@ -1,6 +1,9 @@
 apie:
   cms:
     dashboard_template: 'apie/dashboard.html.twig'
+  datalayers:
+    #default_datalayer: 'App\Apie\InMemoryDataLayer'
+    default_datalayer: 'Apie\Faker\Datalayers\FakerDatalayer'
   bounded_contexts:
     petstore:
       entities_folder: "%kernel.project_dir%/src/Apie/PetStore/Resources/"
