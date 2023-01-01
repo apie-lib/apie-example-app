@@ -11,7 +11,8 @@ class OwnedByUser implements EntityInterface
 {
     public function __construct(
         #[Context('authenticated')] private readonly User $user,
-        private readonly OwnedByUserIdentifier $id
+        private readonly OwnedByUserIdentifier $id,
+        private bool $owned = true
     ) {
     }
 
@@ -23,5 +24,17 @@ class OwnedByUser implements EntityInterface
     public function getUser(): UserIdentifier
     {
         return $this->user->getId();
+    }
+
+    public function isOwned(): bool
+    {
+        return $this->owned;
+    }
+
+    public function setOwned(bool $owned): self
+    {
+        $this->owned = $owned;
+
+        return $this;
     }
 }

@@ -41,7 +41,7 @@ class ExampleDto implements DtoInterface
 
     public InternationalPhoneNumber $phoneNumber;
 
-    //ublic CountryAndPhoneNumber $countryAndPhoneNumber;
+    public CountryAndPhoneNumber $countryAndPhoneNumber;
 
     public PhpRegularExpression $regularExpression;
 

@@ -9,6 +9,7 @@
         "ext-iconv": "*",
         "apie/apie-bundle": "1.0.0.x-dev",
         "apie/cms": "1.0.0.x-dev",
+        "apie/cms-api-dropdown-option": "1.0.0.x-dev",
         "apie/cms-layout-graphite": "1.0.0.x-dev",
         "apie/common-value-objects": "1.0.0.x-dev",
         "apie/country-and-phone-number": "1.0.0.x-dev",
