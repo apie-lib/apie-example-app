@@ -19,6 +19,13 @@ class Example implements EntityInterface
         return $this->id;
     }
 
+    public function setExampleDto(ExampleDto $exampleDto): self
+    {
+        $this->exampleDto = $exampleDto;
+
+        return $this;
+    }
+
     public function getExampleDto(): ExampleDto
     {
         return $this->exampleDto;

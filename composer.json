@@ -13,9 +13,11 @@
         "apie/cms-layout-graphite": "1.0.0.x-dev",
         "apie/common-value-objects": "1.0.0.x-dev",
         "apie/country-and-phone-number": "1.0.0.x-dev",
+        "apie/doctrine-entity-datalayer": "1.0.0.x-dev",
         "apie/faker": "1.0.0.x-dev",
         "apie/rest-api": "1.0.0.x-dev",
         "apie/text-value-objects": "1.0.0.x-dev",
+        "doctrine/doctrine-bundle": "^2.10",
         "symfony/console": "6.1.*",
         "symfony/dotenv": "6.1.*",
         "symfony/flex": "^2",
@@ -78,6 +80,8 @@
         }
     },
     "require-dev": {
+        "symfony/debug-bundle": "6.1.*",
+        "symfony/monolog-bundle": "^3.0",
         "symfony/stopwatch": "6.1.*",
         "symfony/web-profiler-bundle": "6.1.*"
     }
